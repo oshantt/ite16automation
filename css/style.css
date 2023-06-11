@@ -35,11 +35,10 @@ a {
   transition: transform 80ms ease-in;
   text-decoration: none;
   margin: 0 5px;
-}
-
-a:hover {
-  background-color: #0c0b34;
-  color: white;
+  &:hover {
+    background-color: #0c0b34;
+    color: white;
+  }
 }
 
 a.ghost {
@@ -47,11 +46,31 @@ a.ghost {
   background-color: transparent;
   border-color: #ffffff;
   transition: background-color 0.2s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.43);
+    color: white;
+  }
 }
-
-a.ghost:hover {
-  background-color: rgba(255, 255, 255, 0.43);
-  color: white;
+.btn-light {
+  transition: background-color 0.2s;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  border-style: solid;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  text-decoration: none;
+  margin: 0 5px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.43);
+    color: white;
+  }
 }
 
 table {
@@ -147,4 +166,14 @@ canvas {
 
 .sortable {
   cursor: pointer;
+}
+
+.modal-dialog {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  transform: translate(0, 0) !important;
+  max-width: 450px !important; /* Adjust the value as per your requirement */
+  min-width: 450px !important;
+ margin-top: 50px !important;
 }
