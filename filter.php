@@ -1,4 +1,5 @@
 <?php
+// execute_custom_query.php
 
 include "db_config.php";
 

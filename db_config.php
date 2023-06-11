@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-$conn = mysqli_connect('localhost','root','','db_automation');
+$conn = mysqli_connect('localhost','root','','php-crud');
 
 // Check connection
 if (!$conn) {

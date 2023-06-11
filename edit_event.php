@@ -21,7 +21,7 @@ if (isset($_POST["submit"])) {
   $result = mysqli_query($conn, $sql);
 
   if ($result) {
-    header("Location: admin_index.php?msg=Data updated successfully");
+    header("Location: index_admin.php?msg=Data updated successfully");
   } else {
     echo "Failed: " . mysqli_error($conn);
   }
@@ -93,7 +93,7 @@ if (isset($_POST["submit"])) {
                 $subId = $row['subject_id'];
                 $selected = ($subId == $selectedSubjectId) ? 'selected' : '';
 
-                echo "<option value='$subId' $selected>$subjectName, $subId</option>";
+                echo "<option value='$subId' $selected>$subjectName</option>";
               }
               ?>
             </select>

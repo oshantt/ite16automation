@@ -135,7 +135,7 @@ if (isset($error) && count($error) > 0) {
 				<h1>Sign in</h1>
 				<input type="text" name="user_id" placeholder="User ID" required />
 				<input type="password" name="password" placeholder="Password" required />
-				<a href="#">Forgot your password?</a>
+				<a href="index.html">Forgot your password?</a>
 				<button type="submit" name="login">Sign In</button>
 			</form>
 		</div>
