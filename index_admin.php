@@ -63,7 +63,8 @@ if (!isset($_SESSION['instructor_name'])) {
                 <label for="customQuery" class="form-label">Enter SQL Query</label>
                 <textarea class="form-control" id="customQuery" name="customQuery" rows="5" required>SELECT * FROM event_tbl e INNER JOIN subject_tbl s ON e.subject_id = s.subject_id;</textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Run Filter</button>
+              <button type="button" class="btn btn-secondary" id="revertButton">Revert</button>
+              <button type="submit" class="btn btn-success float-end">Run Filter</button>
             </form>
           </div>
         </div>
