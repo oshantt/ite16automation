@@ -29,4 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("revertButton").addEventListener("click", function () {
+  location.reload();
+});
+
 // powered by gpt and stackoverflow
